@@ -4,11 +4,11 @@ try:
 except ImportError:
     from urlparse import urljoin
 
-from wfuzz.plugin_api.urlutils import check_content_type
+from src.wfuzz.plugin_api.urlutils import check_content_type
 
-from wfuzz.plugin_api.mixins import DiscoveryPluginMixin
-from wfuzz.plugin_api.base import BasePlugin
-from wfuzz.externals.moduleman.plugin import moduleman_plugin
+from src.wfuzz.plugin_api.mixins import DiscoveryPluginMixin
+from src.wfuzz.plugin_api.base import BasePlugin
+from src.wfuzz.externals.moduleman.plugin import moduleman_plugin
 
 # Entries format based on:
 # http://docstore.mik.ua/orelly/other/cvs/cvs-CHP-6-SECT-9.htm

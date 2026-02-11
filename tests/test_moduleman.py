@@ -10,10 +10,10 @@ except ImportError:
 
 import unittest
 
-from wfuzz.externals.moduleman.loader import DirLoader
-from wfuzz.externals.moduleman.loader import FileLoader
-from wfuzz.externals.moduleman.registrant import BRegistrant
-from wfuzz.externals.moduleman.plugin import moduleman_plugin
+from src.wfuzz.externals.moduleman.loader import DirLoader
+from src.wfuzz.externals.moduleman.loader import FileLoader
+from src.wfuzz.externals.moduleman.registrant import BRegistrant
+from src.wfuzz.externals.moduleman.plugin import moduleman_plugin
 import wfuzz.externals.moduleman.modulefilter as modulefilter
 
 

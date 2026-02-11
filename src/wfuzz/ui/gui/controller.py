@@ -28,7 +28,7 @@ class WfuzzInterpreter:
             self.do_delete(cmd)
 
     def do_wfilter(self, cmd):
-        from wfuzz.core import dictionary
+        from src.wfuzz.core import dictionary
 
         try:
             session_options = CLParser(cmd).parse_cl()

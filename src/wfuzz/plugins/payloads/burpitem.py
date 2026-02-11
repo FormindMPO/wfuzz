@@ -1,9 +1,9 @@
-from wfuzz.externals.moduleman.plugin import moduleman_plugin
-from wfuzz.exception import FuzzExceptBadFile
-from wfuzz.fuzzobjects import FuzzResult, FuzzWordType
-from wfuzz.fuzzrequest import FuzzRequest
-from wfuzz.plugin_api.base import BasePayload
-from wfuzz.helpers.obj_dyn import rgetattr
+from src.wfuzz.externals.moduleman.plugin import moduleman_plugin
+from src.wfuzz.exception import FuzzExceptBadFile
+from src.wfuzz.fuzzobjects import FuzzResult, FuzzWordType
+from src.wfuzz.fuzzrequest import FuzzRequest
+from src.wfuzz.plugin_api.base import BasePayload
+from src.wfuzz.helpers.obj_dyn import rgetattr
 import xml.etree.cElementTree as ET
 from base64 import b64decode
 

@@ -81,7 +81,7 @@ class DictioFromPayloadBuilder(BaseDictioBuilder):
                 raise FuzzExceptBadOptions(
                     "You must supply a list of payloads in the form of [(name, {params}), ... ]"
                 )
-
+            
             dictionary = Facade().payloads.get_plugin(name)(params)
             if "encoder" in params and params["encoder"] is not None:
                 dictionary = EncodeIt(dictionary, params["encoder"])

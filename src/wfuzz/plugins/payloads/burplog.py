@@ -1,10 +1,10 @@
-from wfuzz.externals.moduleman.plugin import moduleman_plugin
-from wfuzz.exception import FuzzExceptBadFile
-from wfuzz.fuzzobjects import FuzzResult
-from wfuzz.fuzzrequest import FuzzRequest
-from wfuzz.plugin_api.base import BasePayload
-from wfuzz.helpers.obj_dyn import rgetattr
-from wfuzz.fuzzobjects import FuzzWordType
+from src.wfuzz.externals.moduleman.plugin import moduleman_plugin
+from src.wfuzz.exception import FuzzExceptBadFile
+from src.wfuzz.fuzzobjects import FuzzResult
+from src.wfuzz.fuzzrequest import FuzzRequest
+from src.wfuzz.plugin_api.base import BasePayload
+from src.wfuzz.helpers.obj_dyn import rgetattr
+from src.wfuzz.fuzzobjects import FuzzWordType
 
 import re
 

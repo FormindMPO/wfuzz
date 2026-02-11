@@ -2,9 +2,9 @@ import unittest
 
 # Python 2 and 3: urlib.parse
 
-from wfuzz.fuzzobjects import FuzzResult
-from wfuzz.fuzzrequest import FuzzRequest
-from wfuzz.filters.ppfilter import FuzzResFilter
+from src.wfuzz.fuzzobjects import FuzzResult
+from src.wfuzz.fuzzrequest import FuzzRequest
+from src.wfuzz.filters.ppfilter import FuzzResFilter
 
 
 raw_req = """GET / HTTP/1.1

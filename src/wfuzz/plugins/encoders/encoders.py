@@ -1,4 +1,4 @@
-from wfuzz.externals.moduleman.plugin import moduleman_plugin
+from src.wfuzz.externals.moduleman.plugin import moduleman_plugin
 
 # Python 2 and 3
 try:

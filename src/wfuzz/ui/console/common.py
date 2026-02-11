@@ -1,5 +1,5 @@
 import sys
-from wfuzz import __version__ as version
+from src.wfuzz import __version__ as version
 import os
 
 if os.name == "nt":

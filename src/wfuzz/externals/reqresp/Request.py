@@ -19,8 +19,8 @@ from .Variables import VariablesSet
 from .exceptions import ReqRespException
 from .Response import Response
 
-from wfuzz.helpers.str_func import python2_3_convert_to_unicode
-from wfuzz.helpers.obj_dic import CaseInsensitiveDict
+from src.wfuzz.helpers.str_func import python2_3_convert_to_unicode
+from src.wfuzz.helpers.obj_dic import CaseInsensitiveDict
 
 from .TextParser import TextParser
 

@@ -1,5 +1,5 @@
-from wfuzz.factories.plugin_factory import plugin_factory
-from wfuzz.fuzzobjects import FuzzPlugin
+from src.wfuzz.factories.plugin_factory import plugin_factory
+from src.wfuzz.fuzzobjects import FuzzPlugin
 
 from queue import Queue
 

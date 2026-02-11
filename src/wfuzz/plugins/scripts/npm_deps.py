@@ -1,8 +1,8 @@
 import re
 
-from wfuzz.plugin_api.base import BasePlugin
-from wfuzz.exception import FuzzExceptPluginBadParams
-from wfuzz.externals.moduleman.plugin import moduleman_plugin
+from src.wfuzz.plugin_api.base import BasePlugin
+from src.wfuzz.exception import FuzzExceptPluginBadParams
+from src.wfuzz.externals.moduleman.plugin import moduleman_plugin
 
 
 @moduleman_plugin

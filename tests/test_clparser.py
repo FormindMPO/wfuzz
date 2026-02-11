@@ -1,6 +1,6 @@
 import unittest
 
-from wfuzz.ui.console.clparser import CLParser
+from src.wfuzz.ui.console.clparser import CLParser
 
 
 class CLParserTest(unittest.TestCase):

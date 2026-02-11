@@ -1,7 +1,7 @@
-from wfuzz.externals.moduleman.plugin import moduleman_plugin
-from wfuzz.plugin_api.base import BasePayload
-from wfuzz.exception import FuzzExceptPluginBadParams
-from wfuzz.fuzzobjects import FuzzWordType
+from src.wfuzz.externals.moduleman.plugin import moduleman_plugin
+from src.wfuzz.plugin_api.base import BasePayload
+from src.wfuzz.exception import FuzzExceptPluginBadParams
+from src.wfuzz.fuzzobjects import FuzzWordType
 
 import random
 

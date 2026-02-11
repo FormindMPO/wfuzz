@@ -1,5 +1,5 @@
-from wfuzz.externals.moduleman.plugin import moduleman_plugin
-from wfuzz.plugin_api.base import BasePlugin
+from src.wfuzz.externals.moduleman.plugin import moduleman_plugin
+from src.wfuzz.plugin_api.base import BasePlugin
 
 # Python 2 and 3
 try:

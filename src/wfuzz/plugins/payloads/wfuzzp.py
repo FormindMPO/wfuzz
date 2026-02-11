@@ -1,11 +1,11 @@
 import pickle as pickle
 import gzip
 
-from wfuzz.externals.moduleman.plugin import moduleman_plugin
-from wfuzz.exception import FuzzExceptBadFile
-from wfuzz.fuzzobjects import FuzzResult, FuzzWordType
-from wfuzz.plugin_api.base import BasePayload
-from wfuzz.helpers.obj_dyn import rgetattr
+from src.wfuzz.externals.moduleman.plugin import moduleman_plugin
+from src.wfuzz.exception import FuzzExceptBadFile
+from src.wfuzz.fuzzobjects import FuzzResult, FuzzWordType
+from src.wfuzz.plugin_api.base import BasePayload
+from src.wfuzz.helpers.obj_dyn import rgetattr
 
 
 @moduleman_plugin

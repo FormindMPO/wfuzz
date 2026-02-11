@@ -7,7 +7,7 @@ try:
 except ImportError:
     from itertools import izip_longest as zip_longest
 
-from wfuzz.fuzzobjects import FuzzWordType, FuzzType, FuzzPlugin
+from src.wfuzz.fuzzobjects import FuzzWordType, FuzzType, FuzzPlugin
 
 from .common import exec_banner, Term
 from .getch import _Getch

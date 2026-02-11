@@ -3,7 +3,7 @@ import sys
 from io import BytesIO
 
 import wfuzz
-from wfuzz.facade import Facade
+from src.wfuzz.facade import Facade
 
 try:
     # Python >= 3.3

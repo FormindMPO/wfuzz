@@ -6,10 +6,10 @@ if sys.version_info >= (3, 0):
 else:
     from urlparse import urljoin
 
-from wfuzz.plugin_api.mixins import DiscoveryPluginMixin
-from wfuzz.plugin_api.base import BasePlugin
-from wfuzz.plugin_api.urlutils import check_content_type
-from wfuzz.externals.moduleman.plugin import moduleman_plugin
+from src.wfuzz.plugin_api.mixins import DiscoveryPluginMixin
+from src.wfuzz.plugin_api.base import BasePlugin
+from src.wfuzz.plugin_api.urlutils import check_content_type
+from src.wfuzz.externals.moduleman.plugin import moduleman_plugin
 
 
 @moduleman_plugin

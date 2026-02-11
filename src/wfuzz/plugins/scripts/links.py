@@ -6,10 +6,10 @@ try:
 except ImportError:
     from urlparse import urljoin
 
-from wfuzz.plugin_api.mixins import DiscoveryPluginMixin
-from wfuzz.plugin_api.base import BasePlugin
-from wfuzz.plugin_api.urlutils import parse_url
-from wfuzz.externals.moduleman.plugin import moduleman_plugin
+from src.wfuzz.plugin_api.mixins import DiscoveryPluginMixin
+from src.wfuzz.plugin_api.base import BasePlugin
+from src.wfuzz.plugin_api.urlutils import parse_url
+from src.wfuzz.externals.moduleman.plugin import moduleman_plugin
 
 
 KBASE_PARAM_PATH = "links.add_path"

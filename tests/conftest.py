@@ -1,11 +1,11 @@
 import pytest
 
 
-from wfuzz.fuzzrequest import FuzzRequest
-from wfuzz.fuzzobjects import FuzzResult
-from wfuzz.fuzzobjects import FPayloadManager
-from wfuzz.filters.ppfilter import FuzzResFilter
-from wfuzz.facade import Facade
+from src.wfuzz.fuzzrequest import FuzzRequest
+from src.wfuzz.fuzzobjects import FuzzResult
+from src.wfuzz.fuzzobjects import FPayloadManager
+from src.wfuzz.filters.ppfilter import FuzzResFilter
+from src.wfuzz.facade import Facade
 
 
 @pytest.fixture

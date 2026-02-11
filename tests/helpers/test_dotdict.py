@@ -1,7 +1,7 @@
 import pytest
 
-from wfuzz.helpers.obj_dic import DotDict
-from wfuzz.helpers.obj_dyn import rgetattr
+from src.wfuzz.helpers.obj_dic import DotDict
+from src.wfuzz.helpers.obj_dyn import rgetattr
 
 
 @pytest.fixture

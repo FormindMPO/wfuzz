@@ -1,6 +1,6 @@
 import pytest
 
-from wfuzz.helpers.obj_dic import CaseInsensitiveDict
+from src.wfuzz.helpers.obj_dic import CaseInsensitiveDict
 
 
 @pytest.fixture

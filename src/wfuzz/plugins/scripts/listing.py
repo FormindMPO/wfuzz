@@ -1,7 +1,7 @@
 import re
 
-from wfuzz.plugin_api.base import BasePlugin
-from wfuzz.externals.moduleman.plugin import moduleman_plugin
+from src.wfuzz.plugin_api.base import BasePlugin
+from src.wfuzz.externals.moduleman.plugin import moduleman_plugin
 
 
 @moduleman_plugin

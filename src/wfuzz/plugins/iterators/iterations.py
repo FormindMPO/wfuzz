@@ -1,5 +1,5 @@
-from wfuzz.externals.moduleman.plugin import moduleman_plugin
-from wfuzz.dictionaries import BaseIterator
+from src.wfuzz.externals.moduleman.plugin import moduleman_plugin
+from src.wfuzz.dictionaries import BaseIterator
 
 import itertools
 from functools import reduce

@@ -4,17 +4,17 @@ import getopt
 import warnings
 from collections import defaultdict
 
-from wfuzz.helpers.file_func import get_filter_help_file
-from wfuzz.helpers.obj_dyn import allowed_fields
-from wfuzz.filters.ppfilter import PYPARSING
-from wfuzz.facade import Facade
-from wfuzz.options import FuzzSession
-from wfuzz.exception import FuzzException, FuzzExceptBadOptions, FuzzExceptBadInstall
+from src.wfuzz.helpers.file_func import get_filter_help_file
+from src.wfuzz.helpers.obj_dyn import allowed_fields
+from src.wfuzz.filters.ppfilter import PYPARSING
+from src.wfuzz.facade import Facade
+from src.wfuzz.options import FuzzSession
+from src.wfuzz.exception import FuzzException, FuzzExceptBadOptions, FuzzExceptBadInstall
 from .common import help_banner, exec_banner
 from .common import usage
 from .common import brief_usage
 from .common import verbose_usage
-from wfuzz import __version__ as version
+from src.wfuzz import __version__ as version
 from .output import table_print
 
 short_opts = "hLAZX:vcb:e:R:D:d:z:r:f:t:w:V:H:m:f:o:s:p:w:u:"

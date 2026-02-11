@@ -5,9 +5,9 @@ import gzip
 import pickle as pickle
 
 import wfuzz
-from wfuzz.facade import Facade
-from wfuzz.fuzzobjects import FuzzResult
-from wfuzz.fuzzrequest import FuzzRequest
+from src.wfuzz.facade import Facade
+from src.wfuzz.fuzzobjects import FuzzResult
+from src.wfuzz.fuzzrequest import FuzzRequest
 
 try:
     # Python >= 3.3

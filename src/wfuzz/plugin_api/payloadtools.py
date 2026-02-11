@@ -1,10 +1,10 @@
-from wfuzz.exception import (
+from src.wfuzz.exception import (
     FuzzExceptMissingAPIKey,
     FuzzExceptResourceParseError,
     FuzzExceptPluginLoadError,
 )
-from wfuzz.facade import Facade
-from wfuzz.helpers.utils import MyCounter
+from src.wfuzz.facade import Facade
+from src.wfuzz.helpers.utils import MyCounter
 
 
 # Python 2 and 3: alternative 4

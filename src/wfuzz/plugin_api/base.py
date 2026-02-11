@@ -1,12 +1,12 @@
-from wfuzz.fuzzobjects import FuzzWord, FuzzPlugin
-from wfuzz.exception import (
+from src.wfuzz.fuzzobjects import FuzzWord, FuzzPlugin
+from src.wfuzz.exception import (
     FuzzExceptBadFile,
     FuzzExceptBadOptions,
     FuzzExceptPluginError,
 )
-from wfuzz.facade import Facade
-from wfuzz.factories.plugin_factory import plugin_factory
-from wfuzz.helpers.file_func import find_file_in_paths
+from src.wfuzz.facade import Facade
+from src.wfuzz.factories.plugin_factory import plugin_factory
+from src.wfuzz.helpers.file_func import find_file_in_paths
 
 import sys
 import os

@@ -1,5 +1,5 @@
 # Plugins specializations with common methods useful for their own type
-from wfuzz.plugin_api.urlutils import parse_url
+from src.wfuzz.plugin_api.urlutils import parse_url
 from .base import BasePlugin
 
 

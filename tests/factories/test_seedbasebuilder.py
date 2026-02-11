@@ -1,11 +1,11 @@
 import pytest
 
-from wfuzz.fuzzobjects import FuzzWord, FuzzWordType
-from wfuzz.factories.fuzzfactory import SeedBuilderHelper
-from wfuzz.ui.console.clparser import CLParser
-from wfuzz.factories.fuzzresfactory import resfactory
+from src.wfuzz.fuzzobjects import FuzzWord, FuzzWordType
+from src.wfuzz.factories.fuzzfactory import SeedBuilderHelper
+from src.wfuzz.ui.console.clparser import CLParser
+from src.wfuzz.factories.fuzzresfactory import resfactory
 
-from wfuzz.helpers.obj_dyn import rgetattr
+from src.wfuzz.helpers.obj_dyn import rgetattr
 import wfuzz.api
 
 

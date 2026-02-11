@@ -2,7 +2,7 @@ import pytest
 
 # Python 2 and 3: urlib.parse
 
-from wfuzz.fuzzrequest import FuzzRequest
+from src.wfuzz.fuzzrequest import FuzzRequest
 
 
 @pytest.fixture

@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from wfuzz.wfuzz import main
+from src.wfuzz.wfuzz import main
 
 if __name__ == "__main__":
     main()

@@ -3,9 +3,9 @@ import csv as csvmod
 import json as jjson
 from xml.dom import minidom
 
-from wfuzz.externals.moduleman.plugin import moduleman_plugin
-from wfuzz.plugin_api.base import BasePrinter
-from wfuzz.exception import FuzzExceptPluginBadParams
+from src.wfuzz.externals.moduleman.plugin import moduleman_plugin
+from src.wfuzz.plugin_api.base import BasePrinter
+from src.wfuzz.exception import FuzzExceptPluginBadParams
 
 
 @moduleman_plugin

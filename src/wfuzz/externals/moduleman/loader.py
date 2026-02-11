@@ -1,6 +1,7 @@
 import inspect
 import logging
-import imp
+import importlib.util
+import sys
 import os.path
 
 
@@ -51,15 +52,17 @@ class FileLoader(IModuleLoader):
         Opens "filename", inspects it and calls the registrant
         """
         self.__logger.debug("__load_py_from_file. START, file=%s" % (filename,))
-
+        full_path = filename
         dirname, filename = os.path.split(filename)
         fn = os.path.splitext(filename)[0]
         exten_file = None
         module = None
 
         try:
-            exten_file, filename, description = imp.find_module(fn, [dirname])
-            module = imp.load_module(fn, exten_file, filename, description)
+            spec = importlib.util.spec_from_file_location(fn, os.path.join(dirname, fn + ".py"))
+            module = importlib.util.module_from_spec(spec)
+            sys.modules[fn] = module
+            spec.loader.exec_module(module)
         except ImportError as msg:
             self.__logger.critical(
                 "__load_py_from_file. Filename: %s Exception, msg=%s" % (filename, msg)
@@ -87,7 +90,7 @@ class FileLoader(IModuleLoader):
                 if "__PLUGIN_MODULEMAN_MARK" in dir(obj):
                     if self.module_registrant:
                         self.module_registrant.register(
-                            self._build_id(filename, objname), obj
+                            self._build_id(full_path, objname), obj
                         )
 
         self.__logger.debug("__load_py_from_file. END, loaded file=%s" % (filename,))

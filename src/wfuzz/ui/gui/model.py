@@ -1,7 +1,7 @@
 from collections import namedtuple
 import wx.dataview as dv
 
-from wfuzz.filters.ppfilter import FuzzResFilter
+from src.wfuzz.filters.ppfilter import FuzzResFilter
 
 Row = namedtuple("Row", "title colid width rtype field")
 

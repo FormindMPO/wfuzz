@@ -13,8 +13,8 @@ else:
     from urlparse import urlparse
     from urlparse import parse_qs
 
-from wfuzz.facade import Facade
-from wfuzz.exception import FuzzExceptBadAPI
+from src.wfuzz.facade import Facade
+from src.wfuzz.exception import FuzzExceptBadAPI
 
 
 class FuzzRequestParse(ParseResult):
